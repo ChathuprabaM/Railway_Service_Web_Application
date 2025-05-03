@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap');
+body{
+  font-family: "Signika", sans-serif;
+    color: #333;
+}
+.animate-bg-wave {
+  animation: wave 10s infinite alternate;
+}
+
+@keyframes wave {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+
+@keyframes waveAnimation {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .animate-bg-wave .path-animation {
+    animation: waveAnimation 5s ease-in-out infinite;
+  }
+  
